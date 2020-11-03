@@ -101,3 +101,8 @@
         "numberOfSpecialCharacters": 4
     }
 </pre>
+<hr>
+<br>
+<h5>Przykładowe rządanie wysłane do api</h5>
+<p>Do uruchomienia projektu jest wymagana instalacja OpenJDK 15 oraz Maven</p>
+W celu uruchomienia projektu należy wejść do folderu zawierającego plik <strong>pom.xml</strong> a następnie w terminalu wpisać komendę <strong>mvn spring-boot:run</strong>
