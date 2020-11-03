@@ -11,5 +11,4 @@ public class StringAPIResponse {
     Long numberOfLowerCaseLetters;
     Long numberOfDigits;
     Long numberOfSpecialCharacters;
-    Long occurrenceOfCombination;
 }

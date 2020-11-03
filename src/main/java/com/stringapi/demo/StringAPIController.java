@@ -2,16 +2,21 @@ package com.stringapi.demo;
 
 import com.stringapi.demo.dto.StringAPIRequest;
 import com.stringapi.demo.dto.StringAPIResponse;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
 public class StringAPIController {
-    @GetMapping
-    ResponseEntity<StringAPIResponse> stringStatistics(StringAPIRequest stringAPIRequest) {
-        return null;
+
+    @Autowired
+    StringAPIService stringAPIService;
+
+    @ResponseStatus(HttpStatus.OK)
+    @PostMapping
+    StringAPIResponse stringStatistics(@RequestBody StringAPIRequest stringAPIRequest) {
+        return stringAPIService.makeStatisticsOfString(stringAPIRequest);
     }
 }
