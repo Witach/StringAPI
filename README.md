@@ -10,6 +10,8 @@
     <li>Ilość cyfr</li>
     <li>Ilość znaków specjalnych (np. *,!,% etc.)</li>
 </ul>
+<hr>
+<br>
 <h3>Endpoint</h3>
 <em>POST /api</em>
 <h5>Endpoint przyjmuje obiekt JSON o następujących parametrach</h5>
@@ -76,7 +78,8 @@
     </tr>
     </tbody>
 </table>
-
+<hr>
+<br>
 <h3>Przykład wykorzystania API</h3>
 <h5>Przykładowe rządanie wysłane do api</h5>
 <p>Pod endpoint POST /api wysyłamy następujący obiekt JSON.</p>
@@ -85,6 +88,7 @@
         "content": "AABBbbaaa123123...."
     }
 </pre>
+<br>
 <p>Jako wynik powinnismy otrzymac następującą odpowiedź</p>
 <pre>
     {
